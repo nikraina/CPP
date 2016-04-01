@@ -1,1 +1,1 @@
-This is test of writing into file using c++ code , and i overwrite everything in the file
+abc 1 NYC
