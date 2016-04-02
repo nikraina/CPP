@@ -15,8 +15,10 @@ public:
 };
 
 int main(){
-	std::thread t1((dummyClass()));
+	dummyClass obj1;
+	std::thread t1(&dummyClass::getVal,obj1);
+	t1.join();
 
-	cout<<"This is main class";
+	cout<<"This is main class"<<endl;
 	return 0;
 }
