@@ -7,7 +7,7 @@ void print(){
 }
 
 int main(){
-	std::thread child(print);	//child thread starts execution
+	std::thread child(&print);	//child thread starts execution
 	//child.join();	//main thread waits for the child thread to finish
 	child.detach();	//child thread will run independently of the main thread
 	cout<<"Hello world using main thread"<<endl;
